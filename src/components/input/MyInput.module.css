@@ -1,0 +1,29 @@
+.input {
+    width: 50vmin;
+    /* height: 6vmin; */
+    margin: 2vmin 0;
+    background: #FFFFFF;
+    border-radius: 2vmin;
+    outline: none;
+    border: none;
+    padding: 1vmin 0 1vmin 2vmin;
+    cursor: pointer;
+
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 3vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    .input{
+        width: 65vmin;
+        height: 10vmin;
+        font-size: 5vmin;
+        padding: 0 0 0 4vmin;
+        border-radius: 3vmin;
+    }
+ }

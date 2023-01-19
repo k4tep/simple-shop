@@ -1,0 +1,31 @@
+.button {
+    width: 35vmin;
+    /* height: 6vmin; */
+
+    background: #FFFFFF;
+    border-radius: 2vmin;
+    outline: none;
+    border: none;
+    padding: 1vmin 0;
+    margin-top: 3vmin;
+    cursor: pointer;
+
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 3vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #000000;
+}
+
+@media screen and (max-width: 700px) {
+    .button{
+        height: 10vmin;
+        width: 45vmin;
+        font-size: 5vmin;
+        border-radius: 3vmin;
+    }
+}
