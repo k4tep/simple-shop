@@ -2,7 +2,6 @@ import React from 'react';
 import classes  from "../div/MyDiv.module.css";
 
 export interface MyDivProps {
-    placeholder: string
     children: React.ReactNode
 }
 

@@ -4,7 +4,6 @@
     width: 23%;
     margin: 6vmin 0 6vmin 6vmin;
     justify-content: center;
-    background-image: url(/src/images/20221120001843.png);
 }
 
 .img_login {
@@ -41,7 +40,7 @@
 .p {
     font-size: 2vmin;
     color: #33186A;
-    margin: 1vmin 0 0 0;
+    margin: 0;
 }
 
 .container_for_inputs {
@@ -82,7 +81,7 @@
 
 @media screen and (max-width: 1300px) {
     .container_for_img {
-        visibility: hidden;
+        display: none;
         margin: 0;
     }
 
@@ -102,11 +101,10 @@
 
     .p {
         font-size: 3.5vmin;
-        margin: 3vmin 0 0 0;
     }
 
     .container_login{
-        padding: 10vmin;
+        padding: 18vmin;
         margin: 0;
     }
 }

@@ -9,7 +9,7 @@ export function LoginSignup() {
     return(
         <div className= {classes.main_container}>
             <div className= {classes.container_for_img}>
-                <img className= {classes.img_login} src="/static/media/20221120001843.df99bcb05945432da2f3.png" alt='img-login'></img>
+                <img className= {classes.img_login} src="20221120001843.png" alt='img-login'></img>
             </div>
             <div className= {classes.container_login }>
                 <MyH1>Welcome<br></br>to</MyH1>

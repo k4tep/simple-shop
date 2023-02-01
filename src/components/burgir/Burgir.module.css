@@ -1,0 +1,113 @@
+.burgir_container {
+    display: none;
+}
+@media screen and (max-width: 701px) {
+    .burgir_btn:checked ~ .burgir_back {
+        background: rgb(0 0 0 / 67%);
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow-y: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    .burgir_container {
+        display:block;
+        background: #E0E0E0;
+        border-radius: 3vmin;
+        height: fit-content;
+        margin: 4vmin;
+        z-index: 3;
+    }
+    
+    .burgir_btn {
+        opacity: 0;
+    }
+    
+    .burgir_ico {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 4vmin;
+        right: 5vmin;
+        width: 7vmin;
+        height: 5vmin;
+        cursor: pointer;
+        z-index: 4;
+    }
+    
+    .burgir_ico > span,
+    .burgir_ico > span::before,
+    .burgir_ico > span::after {
+      display: block;
+      position: absolute;
+      width: 7vmin;
+      height: 0.3vmin;
+      background-color: #000000;
+      ;
+    }
+    
+    .burgir_ico > span::before {
+      content: '';
+      top: -8px;
+    }
+    
+    .burgir_ico > span::after {
+      content: '';
+      top: 8px;
+    }
+    
+    .burgir_list {
+        /* display: block; */
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        padding: 15vmin 0;
+        list-style: none;
+        text-align: center;
+        background-color: #E0E0E0;
+    }
+    
+    .list_item {
+        display: block;
+        padding: 4vmin 0;
+        font-family: system-ui;
+        font-style: normal;
+        font-weight: 100;
+        color: #33186A;
+        white-space: nowrap;
+        font-size: 6vmin;
+        text-decoration: none;
+    }
+    
+    .list_item:hover {
+        background-color: #E0E0E0;
+    }
+    
+    .burgir_btn:checked ~ .burgir_ico > span {
+        transform: rotate(45deg);
+        background-color: #33186A;
+    }
+    
+    .burgir_btn:checked ~ .burgir_ico > span::before {
+        top: 0;
+        transform: rotate(0);
+        background-color: #33186A;
+    }
+    
+    .burgir_btn:checked ~ .burgir_ico > span::after {
+        top: 0;
+        transform: rotate(90deg);
+        background-color: #33186A;
+    }
+    
+    .burgir_btn:checked ~ .burgir_list {
+        visibility: visible;
+        right: 0;
+    }
+}
