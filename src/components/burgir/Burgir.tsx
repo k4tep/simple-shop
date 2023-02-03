@@ -3,11 +3,12 @@ import classes  from "../burgir/Burgir.module.css";
 
 
 export function Burgir() {
+    // const check = document.getElementById('menu__toggle');
+
     return(
-        // <div className={classes.burgir_back}>
+        <div className={classes.burgir_back}>
             <div className={classes.burgir_container}>
                 <input className={classes.burgir_btn} type={'checkbox'} id="menu__toggle"/>
-                <div className={classes.burgir_back}></div>
                 <label className={classes.burgir_ico} htmlFor={"menu__toggle"}>
                     <span></span>
                 </label>
@@ -17,6 +18,6 @@ export function Burgir() {
                 </ul>
                 
             </div>
-        // </div>
+        </div>
     )
 }
