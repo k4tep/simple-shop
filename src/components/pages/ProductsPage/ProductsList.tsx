@@ -1,9 +1,6 @@
 import React from 'react';
-import { MyButton } from '../../button/MyButton';
-import { MyH1 } from '../../h1/MyH1';
-import { MyInput } from '../../input/MyInput';
+import { Header } from '../../header/Header';
 import {ProductsDiv} from '../../productDiv/ProductDiv'
-import { Burgir } from "../../burgir/Burgir";
 import classes  from "../ProductsPage/ProductsList.module.css";
 
 
@@ -12,10 +9,8 @@ export function ProductsList() {
     let filterCount: any[] = [];
     for (let i = 0; i < Math.floor(Math.random() * 30); i++) {
         productsCount.push(<ProductsDiv/>)
-
-        // Math.floor(Math.random() * 60)
     }
-    for (let i = 0; i < 60; i++) {
+    for (let i = 0; i < Math.floor(Math.random() * 60); i++) {
         if(i % 5 === 0){
             filterCount.push(<div className={classes.filter_container}>
                 <input type={'checkbox'}/>
@@ -31,26 +26,7 @@ export function ProductsList() {
     }
     return(
         <div className={classes.main_body}>
-            <div className={classes.header}>
-                <div className={classes.header_container}>
-                    <div className={classes.content_left}>
-                        <div className={classes.logo_container}>
-                            <h1 className={classes.h1}>SimpleShop</h1>
-                            <p className={classes.p}>Simple store - simple shopping</p>
-                        </div>
-                        <div className={classes.search_container}>
-                            <MyInput placeholder='Search...'>
-                            </MyInput>
-                        </div>
-                    </div>
-                    <div className={classes.button_container}>
-                        <img className={classes.img} src='6388405.png'></img>
-                        <MyH1>Profile/Login</MyH1>
-                        
-                    </div>
-                    <Burgir/>
-                </div>
-            </div>
+            <Header/>
             <div className={classes.products_container}>
                 <input className={classes.filter_btn} type={'checkbox'} id="filter__toggle"/>
                 <div  className={classes.filtersList_container}>
