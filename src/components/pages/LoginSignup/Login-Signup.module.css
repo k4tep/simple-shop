@@ -41,6 +41,7 @@
     font-size: 2vmin;
     color: #33186A;
     margin: 0;
+    cursor: pointer;
 }
 
 .container_for_inputs {

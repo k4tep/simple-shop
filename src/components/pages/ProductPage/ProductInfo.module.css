@@ -10,6 +10,7 @@
     height: 8vmin;
     width: 3vmin;
     padding: 2vmin;
+    cursor: pointer;
 }
 
 .product_photo {
@@ -51,6 +52,29 @@ h3 {
     font-size: 2.5vmin;
     color: #000000;
     margin: 0;
+}
+
+.description {
+    font-size: 2.5vmin;
+    color: #000000;
+    margin: 0;
+    padding: 2.5vmin;
+}
+
+.reviews {
+    font-size: 2.5vmin;
+    color: #000000;
+    margin: 1vmin;
+}
+
+.descriptionBtn {
+    font-size: 2.5vmin;
+    color: #33186A;
+    margin: 0;
+    margin-left: 4vmin;
+    padding-bottom: 2vmin;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .info_name {
